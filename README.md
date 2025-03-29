@@ -1,6 +1,7 @@
 # Xojo-UUID-Generator-Class
 
 A lightweight Xojo class for generating RFC4122 compliant **UUID version 4** identifiers.
+An application developed with xojo 2025R1.
 
 ## ✨ Features
 
@@ -37,3 +38,5 @@ MessageBox("Compact UUID: " + uuid2)
 Var uuid3 As String = gen.GenerateUUIDv4(UUIDGenerator.UUIDFormat.Base64)
 MessageBox("Base64 UUID: " + uuid3)
 // Example: T6YuCLxSTn+NOiLJPjj35g==
+
+
