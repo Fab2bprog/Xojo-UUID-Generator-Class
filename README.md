@@ -1,2 +1,39 @@
 # Xojo-UUID-Generator-Class
-This Xojo class generates RFC 4122-compliant UUID version 4 identifiers. It supports customizable output formats, including standard hexadecimal with or without hyphens, and Base64 (with optional padding). The UUIDs are randomly generated and suitable for use as unique identifiers in databases, APIs, files, and distributed systems.
+
+A lightweight Xojo class for generating [RFC 4122](https://datatracker.ietf.org/doc/html/rfc4122)-compliant **UUID version 4** identifiers.
+
+## ✨ Features
+
+- ✅ Generates **UUID v4** (random-based) according to RFC 4122
+- ✅ Output in **Hexadecimal** (with or without hyphens)
+- ✅ Output in **Base64** format
+- ✅ Minimal, cross-platform Xojo class
+- ✅ Suitable for desktop, web, or mobile projects
+
+---
+
+## 📦 Installation
+
+Simply copy the `UUIDGenerator` class into your Xojo project. No external dependencies.
+
+---
+
+## 🚀 Usage
+
+```xojo
+Var gen As New UUIDGenerator
+
+// 1. Generate standard UUID (Hex with hyphens)
+Var uuid1 As String = gen.GenerateUUIDv4(UUIDGenerator.UUIDFormat.Hex, True)
+MessageBox("Standard UUID: " + uuid1)
+// Example: 4fa62e08-bc52-4e7f-8d3a-22c93e38f7e6
+
+// 2. Generate compact UUID (Hex without hyphens)
+Var uuid2 As String = gen.GenerateUUIDv4(UUIDGenerator.UUIDFormat.Hex, False)
+MessageBox("Compact UUID: " + uuid2)
+// Example: 4fa62e08bc524e7f8d3a22c93e38f7e6
+
+// 3. Generate Base64 encoded UUID
+Var uuid3 As String = gen.GenerateUUIDv4(UUIDGenerator.UUIDFormat.Base64)
+MessageBox("Base64 UUID: " + uuid3)
+// Example: T6YuCLxSTn+NOiLJPjj35g==
