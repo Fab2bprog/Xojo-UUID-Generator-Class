@@ -1,6 +1,6 @@
 # Xojo-UUID-Generator-Class
 
-A lightweight Xojo class for generating [RFC 4122](https://datatracker.ietf.org/doc/html/rfc4122)-compliant **UUID version 4** identifiers.
+A lightweight Xojo class for generating RFC4122 compliant **UUID version 4** identifiers.
 
 ## ✨ Features
 
